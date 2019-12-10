@@ -1,0 +1,672 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* NAVIGATION */
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #201f1f;
+  padding-bottom: 10px;
+}
+
+.top_page {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.fas fa-search {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.search_logo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fa-search:before {
+  color: #c7c7c7;
+  font-size: 37px;
+  padding-left: 20px;
+}
+
+.search_responsive {
+  display: none;
+}
+
+.logo-kimiebeauty, img {
+  padding-top: 15px;
+  width: 370px;
+  padding: 0px;
+  padding-left: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.two_logo {
+  padding-right: 30px;
+}
+
+.fa-shopping-basket:before {
+  color: #c7c7c7;
+  font-size: 40px;
+}
+
+.fas fa-shopping-basket {
+  width: 20px;
+  height: 20px;
+}
+
+.fa-user-circle:before {
+  color: #c7c7c7;
+  font-size: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+}
+
+.hamburger_menu {
+  display: none;
+}
+
+.navigation {
+  text-align: center;
+  /* display: flex; */
+  width: 100%;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #A9A5A5;
+  font-size: 1.5rem;
+}
+
+.navigation li {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+}
+
+a:hover {
+  color: #E3E3E3;
+  opacity: 1;
+  transition: ease .3s;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+/* BARRE NAVIGATION */
+
+hr {
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  margin-top: 148px;
+  background-image: linear-gradient(to bottom, black, #181515, black);
+}
+
+.box-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.headband {
+  align-content: center;
+  text-align: left;
+  background-image: url("../images/headband1.png");
+  width: 95%;
+  height: 600px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.inner-container {
+  /* text-align: center; */
+  position: absolute;
+  width: 100%;
+  color: #fadcdc;
+  height: auto;
+  margin-top: 90px;
+  padding-left: 60px;
+}
+
+.inner-container a {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  width: 350px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "roboto", serif;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  color: #BB0707;
+  text-align: left;
+  outline: none;
+  text-decoration: none;
+}
+
+span {
+  font-size: 2.3rem;
+}
+
+h2 {
+  padding-bottom: 15px;
+  padding-top: 30px;
+  margin-top: -17px;
+  font-family: "roboto", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.discover_now {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  width: 40px;
+  z-index: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.discover_now:hover, .discover_now:active {
+  background-color: white;
+  color: black;
+  transition: 0.2s ease-in, color 0.2s ease-in;
+}
+
+/* TEXTE DE TRANSITION  */
+.transition-text p {
+  padding: 40px;
+  font-family: 'roboto', serif;
+  font-weight: 100;
+  color: #a9a7a7;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+/* SHOP */
+.products {
+  display: flex;
+}
+
+.week_products {
+  width: 100%;
+  padding: 0px 0px 50px 320px;
+  background-color: #f8f8f8;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  height: 640px;
+  border: 1px solid black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.week_products h2 {
+  font-size: 1.9rem;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 0px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: #530505;
+  padding-right: 479px;
+}
+
+.single-product {
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  width: 26%;
+  height: 480px;
+}
+
+.product-image .overlay {
+  opacity: 0.6;
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.product-image:hover .overlay .like {
+  background-color: black;
+  /* opacity: 0.1; */
+  transition: ease .3s;
+  color: black;
+}
+
+.product-image {
+  position: relative;
+}
+
+.like {
+  position: absolute;
+  font-size: 2rem;
+  top: 1px;
+  color: red;
+}
+
+.fa fa-heart:hover {
+  position: absolute;
+  display: block;
+}
+
+.fa-heart:before {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+}
+
+.product-info {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  color: black;
+  font-family: "roboto", serif;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  margin: 0px;
+  color: black;
+}
+
+.stars-row {
+  display: flex;
+}
+
+.stars-row img {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.product-cta a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.product-cta {
+  background-color: white;
+  color: black;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 90%;
+  border: 1px solid black;
+}
+
+.product-image img {
+  padding: 0px;
+  height: 280px;
+  width: 230px;
+  border-radius: 4px;
+}
+
+.product-cta:hover {
+  background-color: black;
+  color: white;
+}
+
+.description a {
+  color: #6f5d5d;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.description a:hover {
+  color: red;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* PROMOTION */
+.promotion-product {
+  align-content: center;
+  text-align: left;
+  width: 100%;
+  height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.promotion-products h2 {
+  text-align: center;
+  font-style: italic;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 2rem;
+}
+
+.promotion {
+  align-content: center;
+  text-align: left;
+  background-image: url("../images/promotion.jpeg");
+  width: 100%;
+  height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.text-container {
+  height: 80px;
+}
+
+.text-container h2 {
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  width: 30%;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  padding: 20px 20px;
+  font-style: normal;
+  font-family: serif;
+}
+
+.text-container h2:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: ease .3s;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/* NON TESTE SUR LES ANIMAUX */
+.cruelty_free {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.cruelty_free p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 40px;
+  font-family: "cinzel", serif;
+}
+
+.cruelty_free img {
+  width: 30%;
+}
+
+/* AVANTAGES E-BOUTIQUE */
+.avantages {
+  padding-top: 10px;
+  background-color: #ffe2e2;
+  height: 500px;
+  color: #836d6d;
+}
+
+.the_advantages {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 200px 50px 250px;
+}
+
+.avantages h2 {
+  font-family: "roboto", serif;
+  font-weight: bold;
+  color: #850303;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.first-advantage img {
+  width: 35%;
+}
+
+.second-advantage img {
+  width: 35%;
+  padding-left: 100px;
+}
+
+.third-advantage img {
+  width: 35%;
+  padding-bottom: 10px;
+}
+
+.first-advantage p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 55%;
+}
+
+.second-advantage p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-top: 28px;
+  width: 53%;
+}
+
+.third-advantage p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-top: 10px;
+  width: 55%;
+}
+
+/* FOOTER */
+.website-footer {
+  display: flex;
+  color: white;
+  margin: 30px;
+}
+
+footer h3 {
+  font-family: "roboto", serif;
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+/* COLUMN 1 */
+.description-website {
+  font-size: 1.4rem;
+  font-family: "roboto", serif;
+  text-align: center;
+  font-weight: lighter;
+  color: grey;
+  width: 100%;
+  padding-left: 20px;
+}
+
+
+.footer-column {
+  width: 33%;
+  text-align: center;
+}
+
+.footer-column textarea {
+  resize: none;
+  width: 80%;
+}
+
+.footer-column ul {
+  text-decoration: none;
+}
+
+.footer-column ul {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: grey;
+  list-style-type: none;
+}
+
+.footer-column a:hover {
+  color: #E3E3E3;
+  opacity: 1;
+  transition: ease .3s;
+}
+
+form>div {
+  margin-bottom: 10px;
+}
+
+/* 2ND COLUMN */
+#userPseudo {
+  width: 80%;
+  height: 40%;
+}
+
+#userMail {
+  width: 80%;
+  height: 40%;
+}
+
+#userTel {
+  width: 80%;
+  height: 40%;
+}
+
+/* 3RD COLUMN */
+.links a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* FOLLOWING MEDIA */
+.follow {
+  color: #E87171;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.media {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.media a {
+  color: #D8D8D8;
+  display: inline-block;
+  font-size: 2.3rem;
+  padding: 40px;
+}
+
+.media a:hover {
+  color: #E87171;
+}
+
+.instagram {
+  /* padding-left: 600px; */
+}
+
+.instagram a:hover {
+  color: #D6570F;
+}
+
+.facebook a:hover {
+  color: #3B5998;
+}
+
+.twitter a:hover {
+  color: #50A4F1;
+}
+
+.pinterest a:hover {
+  color: red;
+}
+
+.ending {
+  color: grey;
+  text-align: center;
+}
+
+/* ANCHOR */
+#up_page {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 60px;
+  color: grey;
+}
+
+#up_page:hover {
+  color: #E87171;
+}
+
+*/
